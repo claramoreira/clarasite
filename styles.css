@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.vertical-border {
+    background-color: #ce4c4c;
+    width: 20px;
+    height: 100%;
+    width: 20px;
+    top: 0;
+    z-index: 10000;
+    position: fixed;
+    background-color: #ce4c4c;
+}
+
+.horizontal-border {
+    height: 20px;
+    width: 100%;
+    background-color: #ce4c4c;
+    height: 20px;
+    left: 0;
+    position: fixed;
+    z-index: 10000;
+    background-color: #ce4c4c;
+}
+
+
+.body-border-left {
+    left: 0;
+}
+
+.body-border-top {
+    top: 0;
+}
+
+.body-border-right {
+    right: 0;
+}
+
+
+.body-border-bottom {
+    bottom: 0;
+}
