@@ -1,30 +1,80 @@
+:root {
+    --deep-blue: #2D3250;
+    --middle-blue: #424769;
+    --light-blue: #7077A1;
+    --orange: #F6B17A;
+
+  }
+
 html, body {
     margin: 0;
     height: 100%;
 }
 
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--deep-blue);
+  font-family: "Shadows Into Light", Calibri, Tahoma, sans-serif;
+}
+
+.heading {
+    flex: 1;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--light-blue);
+    font-style: italic;
+    line-height: 16px;
+}
+
+.navbar {
+    flex: 8;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-family: Calibri, Tahoma, sans-serif;
+    color: var(--orange);
+}
+
+
+li {
+    list-style: none;
+}
+
+a:link {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+a:visited, a:focus , a:active { 
+    text-decoration: none; color: var(--orange);; 
+}
+
 .vertical-border {
-    background-color: #ce4c4c;
+    background-color: black;
     width: 20px;
     height: 100%;
     width: 20px;
     top: 0;
     z-index: 10000;
     position: fixed;
-    background-color: #ce4c4c;
 }
 
 .horizontal-border {
     height: 20px;
     width: 100%;
-    background-color: #ce4c4c;
+    background-color: black;
     height: 20px;
     left: 0;
     position: fixed;
     z-index: 10000;
-    background-color: #ce4c4c;
 }
-
 
 .body-border-left {
     left: 0;
@@ -38,7 +88,10 @@ html, body {
     right: 0;
 }
 
-
 .body-border-bottom {
     bottom: 0;
+}
+
+.main-content {
+    margin: 20px;
 }
