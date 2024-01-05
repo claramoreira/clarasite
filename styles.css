@@ -9,14 +9,13 @@
 html, body {
     margin: 0;
     height: 100%;
+    background-color: var(--light-blue);
 }
-
 
 header {
   display: flex;
   align-items: center;
   background-color: var(--deep-blue);
-  font-family: "Shadows Into Light", Calibri, Tahoma, sans-serif;
 }
 
 .heading {
@@ -26,6 +25,7 @@ header {
     text-align: center;
     color: var(--light-blue);
     font-style: italic;
+    font-family: "Shadows Into Light", Calibri, Tahoma, sans-serif;
     line-height: 16px;
 }
 
@@ -42,7 +42,6 @@ ul {
     color: var(--orange);
 }
 
-
 li {
     list-style: none;
 }
@@ -56,21 +55,38 @@ a:visited, a:focus , a:active {
     text-decoration: none; color: var(--orange);; 
 }
 
+@media screen and (min-width: 600px) {
+    .vertical-border {
+        width: 20px;
+    }
+    .horizontal-border {
+        height: 20px;
+    }
+    .main-content {
+        margin: 20px;
+    }
+    .content-wrap {
+        padding: 5% 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-wrap {
+        padding: 1% 2%;
+    }
+}
+
 .vertical-border {
     background-color: black;
-    width: 20px;
     height: 100%;
-    width: 20px;
     top: 0;
     z-index: 10000;
     position: fixed;
 }
 
 .horizontal-border {
-    height: 20px;
     width: 100%;
     background-color: black;
-    height: 20px;
     left: 0;
     position: fixed;
     z-index: 10000;
@@ -92,6 +108,7 @@ a:visited, a:focus , a:active {
     bottom: 0;
 }
 
-.main-content {
-    margin: 20px;
+.content-wrap {
+    font-family: Calibri, Tahoma, sans-serif;
+    color: white;
 }
